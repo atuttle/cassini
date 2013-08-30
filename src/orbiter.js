@@ -25,7 +25,7 @@ module.exports = {
 		}
 
 		if (verbose) _.each(results, function(val,key,list){
-			console.log('%s => %s bytes', key, val.length);
+			console.log('%s => %s bytes of Markdown', key, val.length);
 		});
 
 		return results;
