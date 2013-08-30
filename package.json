@@ -1,6 +1,6 @@
 {
   "name": "cassini",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "single-page documentation generation (based on underscore.js documentation formatting) for multi-versioned apps",
   "scripts": {
     "test": "Echo 'no tests yet...'"
