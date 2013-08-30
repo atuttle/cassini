@@ -3,7 +3,7 @@ var wrench    = require('wrench')
 	,orbiter   = require('./orbiter');
 
 module.exports = {
-	run: function(cli_args){
+	generate: function(cli_args){
 		GLOBAL.verbose = cli_args.verbose || false;
 		GLOBAL.template_path = cli_args.templatePath || path.normalize(__dirname + '/templates/default/');
 

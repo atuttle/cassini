@@ -27,7 +27,7 @@ if(! program.input || ! program.output){
     process.exit(1);
 }
 
-cassini.run({
+cassini.generate({
     inputDir         : program.input,
     outputDir        : program.output,
     verbose          : program.verbose,
