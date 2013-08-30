@@ -1,0 +1,38 @@
+{
+  "name": "cassini",
+  "version": "0.0.0",
+  "description": "single-page documentation generation (underscore.js format) for multi-versioned apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/atuttle/cassini.git"
+  },
+  "keywords": [
+    "documentation",
+    "generator",
+    "markdown"
+  ],
+  "author": "Adam Tuttle (adam@fusiongrokker.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atuttle/cassini/issues"
+  },
+  "dependencies": {
+    "wrench": "~1.5.1",
+    "commander": "~2.0.0",
+    "handlebars": "~1.0.12",
+    "marked": "~0.2.9",
+    "underscore": "~1.5.1",
+    "highlight.js": "~7.3.0",
+    "cheerio": "~0.12.1"
+  },
+  "bin": {
+    "cassini": "./bin/cassini"
+  },
+  "devDependencies": {
+    "jasmine-node": "~1.11.0"
+  }
+}
