@@ -95,6 +95,12 @@ I'm hosting documentation with exactly the above code, for free, on Heroku. Take
 * **verbose:** print console messages
 * **templatePath:** custom handlebars templates (copy the [default templates](https://github.com/atuttle/cassini/tree/master/src/templates/default) and customize)
 
+## Customizing Templates
+
+I've baked in a spin on the Underscore.js documentation design, but that doesn't mean you have to use it. You can customize the templates to look however you like (within some constraints).
+
+Copy the [default (handlebars) templates](https://github.com/atuttle/cassini/tree/master/src/templates/default) into a templates folder in your project and customize to your liking.
+
 #### Photo Credit
 
 [NASA/JPL-Caltech/Space Science Institute](http://photojournal.jpl.nasa.gov/catalog/PIA14669)
