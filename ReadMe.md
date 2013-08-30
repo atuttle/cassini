@@ -61,11 +61,11 @@ Below is a script that I'm using to host cassini-generated documentation on Hero
 
 ```js
 var express  = require('express')
-	,pkg      = require('./package.json')
-	,cassini  = require('cassini')
-	,path     = require('path')
-	,app      = express()
-	;
+   ,pkg      = require('./package.json')
+   ,cassini  = require('cassini')
+   ,path     = require('path')
+   ,app      = express()
+   ;
 
 var port = process.env.PORT || 5000;
 
