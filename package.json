@@ -1,10 +1,9 @@
 {
   "name": "cassini",
   "version": "0.0.0",
-  "description": "single-page documentation generation (underscore.js format) for multi-versioned apps",
-  "main": "index.js",
+  "description": "single-page documentation generation (based on underscore.js documentation formatting) for multi-versioned apps",
   "scripts": {
-    "test": "jasmine"
+    "test": "Echo 'no tests yet...'"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,9 @@
   "bugs": {
     "url": "https://github.com/atuttle/cassini/issues"
   },
+  "bin": {
+    "cassini": "./bin/cassini"
+  },
   "dependencies": {
     "wrench": "~1.5.1",
     "commander": "~2.0.0",
@@ -28,9 +30,6 @@
     "underscore": "~1.5.1",
     "highlight.js": "~7.3.0",
     "cheerio": "~0.12.1"
-  },
-  "bin": {
-    "cassini": "./bin/cassini"
   },
   "devDependencies": {
     "jasmine-node": "~1.11.0"
