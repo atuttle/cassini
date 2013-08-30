@@ -2,7 +2,7 @@
 
 **Single-page documentation generator for multi-versioned apps**
 
-<img src="https://raw.github.com/atuttle/cassini/master/Cassini.jpg" title="Image of Saturn's Rings from Cassini Spacecraft" width="300" />
+<img src="https://raw.github.com/atuttle/cassini/master/Cassini.jpg" title="Image of Saturn's Rings from Cassini Spacecraft" width="300" align="right" />
 
 ## Why another doc generator?
 
