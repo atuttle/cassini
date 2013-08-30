@@ -1,8 +1,8 @@
-<img src="https://raw.github.com/atuttle/cassini/master/Cassini.jpg" title="Image of Saturn's Rings from Cassini Spacecraft" style="max-width:300px; float:right; margin-left: 20px" />
-
 # Cassini
 
 **Single-page documentation generator for multi-versioned apps**
+
+<img src="https://raw.github.com/atuttle/cassini/master/Cassini.jpg" title="Image of Saturn's Rings from Cassini Spacecraft" width="300" />
 
 ## Why another doc generator?
 
