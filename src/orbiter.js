@@ -80,7 +80,7 @@ module.exports = {
 			}
 
 			//start listing sections
-			$('h2,h3,h4,h5,h6,h7,h8,h9,h10').each(function(){
+			$('h2,h3,h4').each(function(){
 				var $this = $(this)
 					,indent = hTagToInt( $this[0].name )
 					,text = $this.text()
