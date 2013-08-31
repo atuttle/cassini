@@ -11,7 +11,7 @@
 * Mature apps/platforms need to maintain documentation for multiple versions, not just the bleeding edge release
 * Underscore.js documentation formatting rocks! Forced brevity begets simplicity.
 * Markdown is GitHub friendly, IDE friendly, and just plain awesome.
-* Documentation should be collaborative like a wiki, but GitHub wiki's [suck at controlled collaboration](http://fusiongrokker.com/post/how-you-can-contribute-to-taffy-documentation), so by extracting the documentation out to its own repo and using Continuous Deployment, we can have the best of both worlds.
+* Documentation should be collaborative like a wiki, but GitHub wikis [suck at controlled collaboration](http://fusiongrokker.com/post/how-you-can-contribute-to-taffy-documentation), so by extracting the documentation out to its own repo and using Continuous Deployment, we can have the best of both worlds.
 
 ## Examples
 
