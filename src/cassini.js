@@ -6,6 +6,7 @@ module.exports = {
 	generate: function(cli_args){
 		GLOBAL.verbose = cli_args.verbose || false;
 		GLOBAL.template_path = cli_args.templatePath || path.normalize(__dirname + '/templates/default/');
+		if (verbose) console.time('script generation');
 
 		if (verbose) console.log('template path: %s', template_path);
 
@@ -24,5 +25,6 @@ module.exports = {
 			inflateSymlinks: false // Whether to follow symlinks or not when copying files
 		});
 
+		if (verbose) console.timeEnd('script generation');
 	}
 };
