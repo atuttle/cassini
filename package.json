@@ -1,6 +1,6 @@
 {
   "name": "cassini",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "single-page documentation generation (based on underscore.js documentation formatting) for multi-versioned apps",
   "main": "src/cassini.js",
   "scripts": {
