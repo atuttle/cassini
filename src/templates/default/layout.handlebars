@@ -42,6 +42,9 @@
     a:active, a:hover {
       color: blueviolet;
     }
+    #sidebar #version {
+      min-width: 70%;
+    }
     #sidebar .version {
       font-size: 10px;
       font-weight: normal;
@@ -198,5 +201,16 @@
   {{{body}}}
 </div>
 
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript">
+    $("#version").on('change', function(){
+      var newVersion = $(this).find('option:checked').val();
+      var path = window.location.pathname.split('/');
+      path.splice(-2, 2, newVersion, '');
+      path = path.join('/');
+      path = (path[0] === '/' ? path : '/' + path);
+      document.location.href = window.location.protocol + '//' + window.location.host + path;
+    });
+  </script>
 </body>
 </html>

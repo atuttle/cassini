@@ -97,13 +97,30 @@ module.exports = {
 	,wrap: function( documents, templates ){
 		var tocTemplate = this.getTemplate('toc');
 		var layoutTemplate = this.getTemplate('layout');
-		for (var d in documents){
-			var doc = documents[d];
-			doc.toc.version = d;
+		var versions = [];
+
+		_.each(documents, function(doc, versionName, list){
+			versions.push({versionName: versionName});
+		});
+
+		//convert each MD document to HTML with TOC
+		_.each(documents, function(doc, versionName, list){
+			doc.toc.version = versionName;
+
+			// send a unique set of version-names that indicates which is the current being generated
+			var thisVersions = versions.slice(); //copy array by val
+			_.each(thisVersions, function(el, ix, list){
+				if (el.versionName === versionName){
+					el.selected = true;
+				}
+			});
+			doc.toc.versions = thisVersions;
+
 			var toc = tocTemplate(doc.toc);
 			var composed = layoutTemplate({ toc: toc, body: doc.body, title: doc.toc.title + ' ' + doc.toc.version + ' Documentation' });
-			documents[d] = composed;
-		}
+			documents[versionName] = composed;
+		});
+
 		return documents;
 	}
 
