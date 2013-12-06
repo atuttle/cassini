@@ -31,5 +31,5 @@ cassini.generate({
     inputDir         : program.input,
     outputDir        : program.output,
     verbose          : program.verbose,
-    templatePath     : program.template
+    templatePath     : program.templates
 });
