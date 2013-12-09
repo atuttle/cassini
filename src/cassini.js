@@ -5,7 +5,7 @@ var wrench    = require('wrench')
 module.exports = {
 	generate: function(cli_args){
 		GLOBAL.verbose = cli_args.verbose || false;
-		GLOBAL.template_path = cli_args.templatePath || path.normalize(__dirname + '/templates/default/');
+		GLOBAL.template_path = cli_args.templatePath || path.normalize(__dirname + '/templates/underscoreish');
 		if (verbose) console.time('script generation');
 
 		if (verbose) console.log('template path: %s', template_path);
@@ -16,7 +16,7 @@ module.exports = {
 		htmlSrc = orbiter.wrap( htmlSrc );
 		orbiter.writeFilesSync( cli_args.outputDir, htmlSrc );
 
-		var staticContent = path.normalize(template_path + 'static');
+		var staticContent = path.normalize(template_path + '/static');
 		var staticNew = path.normalize(cli_args.outputDir + '/static');
 		wrench.copyDirSyncRecursive(staticContent, staticNew, {
 			forceDelete: true, // Whether to overwrite existing directory or not
