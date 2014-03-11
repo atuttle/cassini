@@ -17,7 +17,7 @@
 
 Here are some projects using Cassini to generate their documentation:
 
-* [Taffy](http://taffydocs.herokuapp.com)
+* [Taffy](http://docs.taffy.io)
 
 ## Using Cassini
 
