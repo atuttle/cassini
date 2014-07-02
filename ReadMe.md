@@ -13,6 +13,10 @@
 * Markdown is GitHub friendly, IDE friendly, and just plain awesome.
 * Documentation should be collaborative like a wiki, but GitHub wikis [suck at controlled collaboration](http://fusiongrokker.com/post/how-you-can-contribute-to-taffy-documentation), so by extracting the documentation out to its own repo and using Continuous Deployment, we can have the best of both worlds.
 
+### Video Demo
+
+[Here's a video of Cassini in action](https://www.youtube.com/watch?v=xzOO7oxgTLE)
+
 ## Examples
 
 Here are some projects using Cassini to generate their documentation:
@@ -58,7 +62,7 @@ writing bin/2.0.0/index.html
 
 ### Node Module
 
-Below is a script that I'm using to host cassini-generated documentation on Heroku. It uses cassini as a module to regenerate the HTML from the current markdown contents at startup; enabling continuous deployment of the documentation: Just commit/pull request/merge and push and let the deploy webhooks take care of the rest. (video coming soon?)
+Below is a script that I'm using to host cassini-generated documentation on Heroku. It uses cassini as a module to regenerate the HTML from the current markdown contents at startup; enabling continuous deployment of the documentation: Just commit/pull request/merge and push and let the deploy webhooks take care of the rest.
 
 ```js
 var express  = require('express')
